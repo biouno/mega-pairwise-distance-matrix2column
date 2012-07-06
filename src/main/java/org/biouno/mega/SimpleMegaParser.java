@@ -171,7 +171,7 @@ public class SimpleMegaParser {
 		String fileName = args[0];
 		String outputFile = args[1];
 		SimpleMegaParser p = new SimpleMegaParser();
-		p.parse(SimpleMegaParser.class.getClassLoader().getResource(fileName).getFile());
+		p.parse(fileName);
 		StringWriter sw = new StringWriter();
 		PrintWriter pw = new PrintWriter(sw);
 		pw.println("Species 1|Species 2|Dist");

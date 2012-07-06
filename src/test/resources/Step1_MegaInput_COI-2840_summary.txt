@@ -1,0 +1,50 @@
+;     MEGA-CC (Molecular Evolutionary Genetics Analysis Compute Core)
+;     www.megasoftware.net
+;     Authors: 
+;           Koichiro Tamura,
+;           Dan Peterson,
+;           Nick Peterson,
+;           Glen Stecher,
+;           Mastoshi Nei,
+;           Sudhir Kumar
+
+;     Suggested Citation for MEGA 5:
+;     Tamura K, Peterson D, Peterson N, Stecher G, Nei M, and Kumar S (2011)
+;     MEGA5: Molecular Evolutionary Genetics Analysis using Maximum Likelihood,
+;     Evolutionary Distance, and Maximum Parsimony Methods. Molecular Biology 
+;     and Evolution 28: 2731-2739. 
+
+
+[General Info]
+
+Data Type                               = nucleotide (non-coding)
+No. of Taxa                             = 53
+No. of Sites                            = 618
+Data File                               = 'Step1_MegaInput_COI.fasta'
+Settings File                           = './M5CC.mao'
+Command Line                            = M51CC.exe  -a M5CC.mao -d Step1_MegaInput_COI.fasta -f Fasta
+
+[Analysis Settings]
+
+Analysis                                = Distance Estimation
+Scope                                   = Pairs of taxa
+Variance Estimation Method              = None
+No. of Bootstrap Replications           = Not Applicable
+Substitutions Type                      = Nucleotide
+Model/Method                            = Maximum Composite Likelihood
+Substitutions to Include                = d: Transitions + Transversions
+Rates among Sites                       = Uniform rates
+Gamma Parameter                         = Not Applicable
+Pattern among Lineages                  = Same (Homogeneous)
+Gaps/Missing Data Treatment             = Complete deletion
+Site Coverage Cutoff (%)                = Not Applicable
+datatype                                = snNucleotide
+containsCodingNuc                       = False
+missingBaseSymbol                       = ?
+identicalBaseSymbol                     = .
+gapSymbol                               = -
+
+[Analysis Statistics]
+
+Execution Time                          = 0.210 (seconds)
+Peak Memory Used(Working Set)           = 18.359 (MB)
